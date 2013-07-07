@@ -33,6 +33,7 @@
 			<artifact name="classmate" type="jar" />
 		</dependency>
 		<dependency org="org.slf4j" name="slf4j-api" rev="1.7.5"/>
+		<dependency org="org.slf4j" name="slf4j-log4j12" rev="1.7.5"/>
 		<dependency org="mysql" name="mysql-connector-java" rev="5.1.25"/>
 		<dependency org="org.hibernate" name="hibernate-core" rev="4.0.1.Final" />
 		<dependency org="org.hibernate" name="hibernate-validator" rev="5.0.1.Final"/>
