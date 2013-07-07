@@ -1,5 +1,6 @@
 package com.qooyee.web.db;
 
+import org.hibernate.HibernateException;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
@@ -17,13 +18,13 @@ public final class HibernateUtils {
 		SessionFactory sessionFactory = null;
 		try{
 			Configuration config = new Configuration();
-			config.configure();
+			config.configure("hibernate.cfg.xml");
 			ServiceRegistry sr = new ServiceRegistryBuilder()
 			.applySettings(config.getProperties())
 			.buildServiceRegistry();
 			
 			sessionFactory = config.buildSessionFactory(sr);
-		}catch(Throwable ex){
+		}catch(HibernateException ex){
 			log.error("func[buildSessionFactory] " + ex.getMessage(), ex);
 		}
 		return sessionFactory;
