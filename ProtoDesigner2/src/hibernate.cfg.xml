@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.password">proto</property>
+        <property name="hibernate.connection.url">jdbc:mysql://192.168.2.16:3366/proto_designer</property>
+        <property name="hibernate.connection.username">proto</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
+        <property name="show_sql">true</property>
+        <property name="hibernate.hbm2ddl.auto">create</property>
+         
+        <mapping class="com.qooyee.web.entities.Project"/>
+        <mapping class="com.qooyee.web.entities.Protocol"/>
+        <mapping class="com.qooyee.web.entities.ApplicationPort"/>
+        <mapping class="com.qooyee.web.entities.Paramter"/>
+        <mapping class="com.qooyee.web.entities.Resultitem"/>
+    </session-factory>
+</hibernate-configuration>

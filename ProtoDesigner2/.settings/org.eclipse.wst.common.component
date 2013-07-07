@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="ProtoDesigner2">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <wb-resource deploy-path="/WEB-INF/lib" source-path="/lib"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/test"/>
+        <property name="context-root" value="ProtoDesigner2"/>
+        <property name="java-output-path" value="/ProtoDesigner2/build/classes"/>
+    </wb-module>
+</project-modules>
