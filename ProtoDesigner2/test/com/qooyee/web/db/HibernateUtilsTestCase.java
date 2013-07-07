@@ -12,6 +12,7 @@ public class HibernateUtilsTestCase {
 	@Test
 	public void testGetSessionFactory() {
 		SessionFactory sf = HibernateUtils.getSessionFactory();
+		
 		Assert.assertNotNull(sf);
 	}
 
