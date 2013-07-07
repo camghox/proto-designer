@@ -12,10 +12,12 @@
         <property name="show_sql">true</property>
         <property name="hibernate.hbm2ddl.auto">create</property>
          
+         <!--
         <mapping class="com.qooyee.web.entities.Project"/>
         <mapping class="com.qooyee.web.entities.Protocol"/>
         <mapping class="com.qooyee.web.entities.ApplicationPort"/>
         <mapping class="com.qooyee.web.entities.Paramter"/>
         <mapping class="com.qooyee.web.entities.Resultitem"/>
+        -->
     </session-factory>
 </hibernate-configuration>
